@@ -1,0 +1,54 @@
+@media (max-width: 700px) {
+    .navbar {
+        z-index: 999;
+        width: 100%;
+        position: relative;
+    }
+
+    .navbar-collapse {
+        background: #fff;
+        display: flexbox;
+        & .nav-link {
+            color: #000;
+        }
+    }
+
+    .in-nav {
+        width: 100%;
+        margin-left: -31px;
+        margin-right: -32px;
+        padding: 10px 20px;
+        height: 100%;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .sidebar-block {
+        margin-left: 0px !important;
+    }
+
+    .card-list {
+        width: 100% !important;
+        margin-bottom: 15px;
+    }
+
+    .card-block .card {
+        margin-left: 0px !important;
+    }
+
+    .jumbotron .leadd {
+        display: none;
+    }
+
+    .footer-menu {
+        margin-left: -25px !important;
+    }
+
+    .auther-block, .f-logo {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+}

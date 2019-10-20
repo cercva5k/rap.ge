@@ -1,0 +1,695 @@
+.btn {
+  display: inline-block;
+  background: #E3E3E3;
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.btn.btn-primarys {
+  background: #b33939;
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+.btn.btn-primarys:hover {
+  background: transparent;
+  border: 2px solid #b33939;
+  color: #fff;
+}
+
+.btn.btn-primarys:active {
+  background: transparent;
+  border: 2px solid #b33939;
+  color: #fff;
+  outline: 0;
+}
+
+.btn.btn-dark {
+  background: #2c2c54;
+  outline: 2px;
+  border: 2px solid transparent;
+}
+
+.btn.btn-dark:hover {
+  background: #353565;
+  border: 2px solid transparent;
+}
+
+.btn.btn-success {
+  background: #2c2c54;
+  border: 2px solid transparent;
+}
+
+.btn.btn-success:hover {
+  background: #353565;
+  color: #fff;
+  border: 2px solid #2c2c54;
+}
+
+.btn.btn-success:active {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #2c2c54;
+  outline: 0;
+}
+
+.btn:hover {
+  background: #333333;
+  color: #fff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  background: #40407a;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px #40407a;
+          box-shadow: inset 0 0 5px #40407a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2c2c54;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+@font-face {
+  font-family: 'BPG Nino Mtavruli';
+  src: url(../fonts/bpg-nino-mtavruli-webfont.eot);
+  src: url(../fonts/bpg-nino-mtavruli-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/bpg-nino-mtavruli-webfont.woff2) format("woff2"), url(../fonts/bpg-nino-mtavruli-webfont.woff) format("woff"), url(../fonts/bpg-nino-mtavruli-webfont.ttf) format("truetype"), url(../fonts/bpg-nino-mtavruli-webfont.svg#bpg_nino_mtavruliregular) format("svg");
+}
+
+@font-face {
+  font-family: 'BPG Rioni';
+  src: url(../fonts/bpg-rioni-webfont.eot);
+  src: url(../fonts/bpg-rioni-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/bpg-rioni-webfont.woff2) format("woff2"), url(../fonts/bpg-rioni-webfont.woff) format("woff"), url(../fonts/bpg-rioni-webfont.ttf) format("truetype"), url(../fonts/bpg-rioni-webfont.svg#bpg_rioniregular) format("svg");
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    z-index: 999;
+    width: 100%;
+    position: relative;
+  }
+  .navbar-collapse {
+    background: #fff;
+    display: flexbox;
+  }
+  .navbar-collapse .nav-link {
+    color: #000;
+  }
+  .in-nav {
+    width: 100%;
+    margin-left: -31px;
+    margin-right: -32px;
+    padding: 10px 20px;
+    height: 100%;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .sidebar-block {
+    margin-left: 0px !important;
+  }
+  .card-list {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+  .card-block .card {
+    margin-left: 0px !important;
+  }
+  .jumbotron .leadd {
+    display: none;
+  }
+  .footer-menu {
+    margin-left: -25px !important;
+  }
+  .auther-block, .f-logo {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../image/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.bg-cc {
+  height: 100px;
+  padding: 10px 15px;
+}
+
+.in-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "BPG Nino Mtavruli";
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1.52;
+  margin-top: 6px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-link:hover {
+  color: #b33939;
+  border-bottom: 1px solid #b33939;
+}
+
+.content {
+  position: relative;
+  background: #fff;
+  display: flexbox;
+  border-radius: 5px 5px 0px 0px;
+  padding: 20px 25px;
+}
+
+.new-block {
+  position: relative;
+}
+
+.block-title {
+  position: relative;
+  border-bottom: 2px solid #b33939;
+  margin-bottom: 10px;
+}
+
+.block-title h1 {
+  background: #b33939;
+  font-family: "BPG Nino Mtavruli";
+  color: #FFF;
+  font-size: 22px;
+  width: 200px;
+  margin: 0px;
+  padding: 0.68rem 0.5rem 0.30rem;
+}
+
+.new-block .card {
+  border: 1px solid #E3E3E3;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.n-card {
+  display: block;
+}
+
+.n-card img {
+  height: 256px;
+  max-width: 100%;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.car-n-c {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0.8;
+  background: #b33939;
+  padding: 0.35rem 0.30rem 0.10rem;
+  font-family: "BPG Nino Mtavruli";
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none !important;
+  letter-spacing: 1.1;
+  color: #fff;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.car-n-c:hover {
+  opacity: 1;
+  color: #2c2c54;
+}
+
+.card {
+  -webkit-box-shadow: -1px 3px 9px #acacac;
+          box-shadow: -1px 3px 9px #acacac;
+}
+
+.card-body {
+  padding: 1.25rem 0.45rem !important;
+}
+
+.n-card-body {
+  display: block;
+}
+
+.n-card-body h1 {
+  font-size: 18px;
+  font-family: "BPG Rioni";
+  font-weight: bolder;
+}
+
+.card-body {
+  padding: 15px 13px !important;
+}
+
+.card-body h5 {
+  font-weight: 700;
+}
+
+.card-body h5:hover {
+  color: #b33939;
+}
+
+.read-more {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+  color: #b33939;
+  padding: 10px 15px;
+  border-radius: 23px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in;
+  transition: opacity 0.5s ease-in;
+}
+
+.card:hover .read-more {
+  opacity: 1;
+}
+
+.row {
+  margin: 0px !important;
+}
+
+.card-block {
+  padding: 20px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-family: "BPG Rioni";
+}
+
+.card-list {
+  position: relative;
+}
+
+.card-list .card-title {
+  font-size: 18px;
+}
+
+.sidebar-block {
+  position: relative;
+  margin-left: -80px;
+  margin-top: 20px;
+  font-family: "BPG Rioni";
+}
+
+.sidebar-block-b {
+  background: #E3E3E3;
+  color: #000;
+  padding: 15px 10px 7px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+.sidebar-block-title {
+  position: relative;
+  background-image: url("../image/sidebar-icon.png");
+  background-repeat: no-repeat;
+  background-size: 28px;
+}
+
+.sidebar-block-title h6 {
+  padding: 5px 42px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+footer {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: -20px;
+}
+
+.footer {
+  position: relative;
+  display: flexbox;
+  background: #2c2c54;
+  width: 100%;
+  height: auto;
+}
+
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px 20px;
+  border-bottom: 2px solid #b33939;
+}
+
+.footer-center {
+  background: #2c2c54;
+  margin: 22px -15px 0px;
+  padding: 10px 30px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.f-center {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-menu {
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  font-family: "BPG Nino Mtavruli";
+  font-weight: 700;
+}
+
+.footer-menu li {
+  float: left;
+  list-style-type: none;
+  padding: 10px 15px;
+  letter-spacing: 1.2;
+}
+
+.footer-menu a {
+  color: #fff;
+}
+
+.auther {
+  position: relative;
+  margin-top: 22px;
+  background: #5858a8;
+  padding: 5px 15px;
+  border-radius: 7px;
+}
+
+.auther a {
+  color: #fff;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1.5;
+}
+
+.f-logo {
+  width: 176px;
+  height: 86px;
+}
+
+.carousel {
+  font-family: "BPG Rioni";
+}
+
+.jumbotron {
+  font-family: "BPG Rioni";
+  text-align: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.jumbotron .display-4 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.jumbotron .lead {
+  color: #fff;
+}
+
+.media {
+  width: 100%;
+  font-size: 15px;
+  margin: 10px 0px;
+}
+
+.media img {
+  width: 64px;
+  height: 58px;
+}
+
+.modal {
+  font-family: "BPG Rioni";
+}
+
+.p-music {
+  position: relative;
+  width: 100%;
+}
+
+.media-1 {
+  background: #E3E3E3;
+  width: 100%;
+  font-size: 15px;
+  margin: 30px 0px;
+  padding: 20px 15px;
+  background: #E3E3E3;
+  border-radius: 4px;
+}
+
+.media-1:active {
+  background: red;
+}
+
+.media-1:hover {
+  background: #acacd3;
+}
+
+.p-music-title {
+  position: relative;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "BPG Rioni";
+  background: #2c2c54;
+  padding: 20px 15px;
+  border-radius: 3px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.p-music-title h6 {
+  font-size: 18px;
+  margin: 4px 5px;
+}
+
+.track-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.more-track {
+  position: relative;
+  background: #6969b0;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+
+.more-track a {
+  line-height: 1;
+  color: #fff;
+}
+
+.page-item {
+  background: #2c2c54 !important;
+  margin: 0px 10px;
+  border-radius: 28px;
+  color: #fff !important;
+}
+
+.page-item:hover {
+  background: #b33939 !important;
+}
+
+.page-item:active {
+  background: #b33939 !important;
+}
+
+.page-item span {
+  margin: 5px 16px !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.disabled {
+  background: #E3E3E3 !important;
+  color: #000 !important;
+}
+
+.page-link {
+  background: transparent !important;
+  border: 0 !important;
+  padding: 10px 16px !important;
+  color: #fff !important;
+}
+
+/* FULL PAGE */
+.blog-full {
+  position: relative;
+  display: flexbox;
+  margin-top: 20px;
+  overflow: hidden;
+  font-family: "BPG Rioni";
+  margin-left: -10px;
+}
+
+.blog-title {
+  border-left: 5px solid #2c2c54;
+  background: #E3E3E3;
+  width: 90%;
+}
+
+.blog-title h1 {
+  font-size: 24px;
+  padding: 10px;
+}
+
+.blog-image {
+  width: 90%;
+  height: 456px;
+  border-radius: 3px;
+}
+
+.blog-info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0px;
+}
+
+.b-info {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.b-info li {
+  float: left;
+  padding: 10px;
+}
+
+.rating {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.rating .like {
+  background: #E3E3E3;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.rating .like:hover {
+  background: #4BB543;
+}
+
+.rating .unlike {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+  background: #E3E3E3;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.rating .unlike:hover {
+  background: #b33939;
+}
+
+.b-full-text {
+  width: 90%;
+  text-align: left;
+  margin: 15px 0px 10px;
+  word-spacing: 0;
+  font-size: 17px;
+}
+
+.v-player {
+  width: 90%;
+  height: 456px;
+  margin: 27px 0px;
+  border-radius: 5px;
+}
+
+.comment, .related {
+  position: relative;
+  width: 90%;
+  margin: 30px 0px;
+}
+
+.r-card .card {
+  margin-bottom: 10px;
+}
+
+.music-page .p-music-title {
+  position: relative;
+  width: 90%;
+}
+/*# sourceMappingURL=styles.css.map */
